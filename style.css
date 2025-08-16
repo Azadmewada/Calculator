@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-c, .flex-r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-c{
+    flex-direction: column;
+}
+
+body{
+    height: 100vh;
+
+    flex-direction: column;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 3rem;
+
+    background: linear-gradient(black, teal);
+}
+
+h1{
+    color: white;
+}
+
+.calc{
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+
+    padding: 0.5rem;
+    background-color: rgb(42, 42, 42);
+}
+
+.display{
+    width: 100%;
+    background-color: black;
+    border-radius: 1rem;
+}
+
+.display input{
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 10px;
+
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    text-align: right;
+}
+
+#res{
+    color: #00ff00;
+}
+
+.advBtns{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+
+.advBtns input{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btnSection{
+    /* border: 2px solid red; */
+    height: 14rem;
+    width: 30rem;
+}
+
+.btns{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+
+.btn, .equal{
+    padding: 0.5rem 3rem;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    border: none;
+}
+
+.btn:hover, .advBtns input:hover, .equal:hover{
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn:active, .advBtns input:active, .equal:active{
+    background-color: black;
+}
+
+.op{
+    color: green;
+    font-size: 2rem;
+}
+
+.equal{
+    color: rgb(0, 128, 255);
+    font-size: 2rem;
+}
+
+
+/* ====================================================== */
+
+
+#history{
+    /* border: 2px solid green; */
+    height: 100%;
+    padding: 0.5rem;
+    display: none;
+
+    /* display: flex; */
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    overflow-y: scroll;
+}
+
+.historyBox{
+    border: 1px solid rgba(255, 255, 255, 0.286);
+    text-align: right;
+
+    padding: 1rem;
+    border-radius: 5px;
+
+    flex-grow: 1;
+}
+
+.historyBox h2{
+    color: #00ff00;
+}

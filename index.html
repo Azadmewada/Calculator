@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+
+    <div class="calc">
+        <div class="display flex-c">
+            <input type="text" id="inp">
+            <input type="text" id="res">
+        </div>
+
+        <div class="advBtns">
+            <input type="button" value="AC" onclick="allClear()">
+            <input type="button" value="History" onclick="toggle()">
+            <input type="button" value="CE" onclick="historyclear()">
+            <input type="button" value="BS" onclick="backspace()">
+        </div>
+
+        <section class="btnSection">
+            <div class="btns">
+                <input type="button" class="btn" value="7">
+                <input type="button" class="btn" value="8">
+                <input type="button" class="btn" value="9">
+                <input type="button" class="btn op" value="/">
+
+                <input type="button" class="btn" value="4">
+                <input type="button" class="btn" value="5">
+                <input type="button" class="btn" value="6">
+                <input type="button" class="btn op" value="*">
+
+                <input type="button" class="btn" value="1">
+                <input type="button" class="btn" value="2">
+                <input type="button" class="btn" value="3">
+                <input type="button" class="btn op" value="-">
+
+                <input type="button" class="btn" value=".">
+                <input type="button" class="btn" value="0">
+                <input type="button" class="equal" value="=" onclick="equal()">
+                <input type="button" class="btn op" value="+">
+            </div>
+
+            <div id="history">
+                
+            </div>
+        </section>
+
+    </div>
+</body>
+
+<script src="./script.js"></script>
+<script src="./history.js"></script>
+
+</html>
